@@ -1,0 +1,22 @@
+.gallery {
+    padding-left: 15px;
+    .gallery-inner {
+    }
+    .gallery-list {
+    }
+    .swiper {
+    }
+    .swiper-wrapper {
+    }
+    .gallery-item {
+        width: 80px;
+        height: 140px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .swiper-slide {
+    }
+}

@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Product Sans';
+    font-weight: 400;
+
+
+    &.active{
+        overflow: hidden;
+    }
+
+}
+
+.container{
+    max-width: 1429px;
+    margin: 0 auto;
+}
+
+
+
+#main{
+    max-width: 360px;
+    margin: 0 auto;
+}
+

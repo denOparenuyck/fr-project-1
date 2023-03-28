@@ -1,0 +1,73 @@
+.numbers {
+    padding-left: 20px;
+    overflow: hidden;
+    
+    .numbers-cards {
+        background: #FFFFFF;
+        box-shadow: inset 0px 0.5px 0px #C6C6C8;
+        padding-top: 10px;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        width: 100%;
+        max-width: 425px;
+        overflow-x: auto;
+        padding-right: 20px;
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .numbers-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: auto;
+
+        &:not(:first-child){
+            margin-left: 23px;
+            padding-left: 23px;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 1px;
+                height: 40px;
+                background: #C6C6C8;
+            }
+        }
+
+        .numbers-card__header {
+            font-family: 'SF Pro Text';
+            font-weight: 400;
+            font-size: 11px;
+            color: #8D8F93;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            white-space: nowrap;
+        }
+        .numbers-card__body {
+            font-family: 'SF Compact Rounded';
+            font-weight: 600;
+            font-size: 23px;
+            color: #8D8F93;
+            margin-bottom: 4px;
+            white-space: nowrap;
+
+        }
+        .numbers-card__footer {
+            font-family: 'SF Pro Text';
+            font-weight: 400;
+            font-size: 11px;
+            color: #8D8F93;
+            white-space: nowrap;
+
+        }
+    }
+
+}

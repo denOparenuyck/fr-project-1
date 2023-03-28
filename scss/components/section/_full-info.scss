@@ -1,0 +1,88 @@
+.full-info {
+    padding-bottom: 13px;
+
+    .full-info__inner {
+        padding: 0 20px;
+    }
+
+    .full-info__list {
+        margin-bottom: 23px;
+
+        .full-info__item {
+            &:not(:first-child){
+                margin-top: 20px;
+                .full-info__item-text{
+                    display: none;
+                }
+            }
+            .full-info__item-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 28px;
+                background: #FFFFFF;
+                box-shadow: inset 0px -0.5px 0px #C6C6C8;
+
+                strong {
+                    font-family: 'SF Pro Text';
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 1.23;
+                    color: #8A898E;
+                }
+
+                img {
+                    width: 18px;
+                    height: 19px;
+                    object-fit: contain;
+                }
+            }
+
+            .full-info__item-text {
+                padding-top: 22px;
+                font-family: 'SF Pro Text';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.2;
+                color: #000000;
+            }
+        }
+    }
+
+    .full-info__text {
+        .full-info__text-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 39px;
+            background: #FFFFFF;
+            box-shadow: inset 0px -0.5px 0px #C6C6C8;
+
+            .full-info__text-header-wrapper {
+                h5 {
+                    font-family: 'PingFang SC';
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 21px;
+                    color: #000000;
+                }
+
+                h6 {
+                    font-family: 'SF Pro Text';
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 1.23;
+                    color: #8A898E;
+                }
+            }
+
+            .full-info__text-header-arrow {
+                width: 18px;
+                height: 19px;
+                object-fit: contain;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+}

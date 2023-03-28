@@ -1,0 +1,90 @@
+.info {
+    margin-top: 20px;
+
+    .info-inner {
+        padding: 0 20px;
+    }
+
+    .info-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        .info-header__title {
+            h4{
+                font-family: 'SF Pro Display';
+                font-weight: 500;
+                font-size: 22px;
+                letter-spacing: -0.401053px;
+                color: #000000;
+                margin-bottom: 13px;
+            }
+            h5{
+                font-family: 'SF Pro Text';
+                font-weight: 400;
+                font-size: 15px;
+                letter-spacing: -0.2px;
+                color: #8E8E92;
+            }
+        }
+        .info-header__info {
+            h4{
+                font-family: 'SF Pro Text';
+                font-weight: 400;
+                font-size: 17px;
+                letter-spacing: -0.338424px;
+                color: #3478F6;
+                margin-bottom: 13px;
+            }
+            h5{
+                font-family: 'SF Pro Text';
+                font-weight: 400;
+                font-size: 15px;
+                letter-spacing: -0.2px;
+                color: #8E8E92;
+                text-align: right;
+            }
+        }
+    }
+
+    .info-wrapper {
+        .info-text {
+            font-family: 'SF Pro Text';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.33;
+            letter-spacing: -0.2px;
+            color: #000000;
+            text-align: justify;
+            height: 60px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            transition: all .5s;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        .info-more {
+            display: inline-block;
+            font-family: 'SF Pro Text';
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: -0.298609px;
+            color: #3478F6;
+            position: relative;
+            
+
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: 2;
+                top: 0px;
+                right: 100%;
+                width: 37px;
+                height: 16px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 100%);
+            }
+        }
+    }
+
+}
